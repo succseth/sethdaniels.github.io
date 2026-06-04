@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+    <div class="header-title">
+      <span class="header-icon">✅</span>
+      <span>Task Manager</span>
+    </div>
+    <div class="stats-chip">
+      <span id="stats-chip-text">0 tasks</span>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <div class="add-task-panel">
+      <h2 class="panel-title">Add New Task</h2>
+      <form id="task-form" class="task-form">
+        <div class="form-main-row">
+          <input
+            type="text"
+            id="task-input"
+            class="task-input"
+            placeholder="What needs to be done?"
+            maxlength="120"
+            required
+            autocomplete="off"
+          >
+          <button type="submit" class="add-btn">Add Task</button>
+        </div>
+        <div class="form-meta-row">
+          <div class="select-wrap">
+            <select id="priority-select" class="meta-select">
+              <option value="medium">⚡ Medium</option>
+              <option value="high">🔴 High</option>
+              <option value="low">🟢 Low</option>
+            </select>
+          </div>
+          <div class="select-wrap">
+            <select id="category-select" class="meta-select">
+              <option value="general">📋 General</option>
+              <option value="work">💼 Work</option>
+              <option value="personal">👤 Personal</option>
+              <option value="shopping">🛒 Shopping</option>
+            </select>
+          </div>
+          <div class="date-wrap">
+            <input type="date" id="due-date" class="meta-select" title="Due date (optional)">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="task-controls">
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab">All</button>
+        <button class="filter-tab" data-filter="active" role="tab">Active</button>
+        <button class="filter-tab" data-filter="completed" role="tab">Completed</button>
+      </div>
+      <div class="sort-wrap">
+        <select id="sort-select" class="sort-select">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="priority">By priority</option>
+          <option value="due">By due date</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="task-list" class="task-list"></div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <div class="empty-icon">📭</div>
+      <p class="empty-title" id="empty-title">No tasks yet</p>
+      <p class="empty-sub" id="empty-sub">Add a task above to get started.</p>
+    </div>
+
+    <div class="list-footer" id="list-footer" hidden>
+      <span id="footer-text"></span>
+      <button class="clear-btn" id="clear-completed">Clear Completed</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

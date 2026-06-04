@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+    <div class="header-title">
+      <span class="header-icon">🧠</span>
+      <span>Quiz App</span>
+    </div>
+    <div class="score-chip" id="score-chip" hidden>
+      Score: <span id="score-display">0</span>
+    </div>
+  </header>
+
+  <!-- START SCREEN -->
+  <div class="screen" id="start-screen">
+    <div class="start-card">
+      <div class="start-icon">🧠</div>
+      <h1 class="start-title">Trivia Quiz</h1>
+      <p class="start-subtitle">Test your knowledge across dozens of categories. Pick your settings and go!</p>
+
+      <div class="settings-form">
+        <div class="setting-group">
+          <label class="setting-label">Category</label>
+          <select id="category-select" class="setting-select">
+            <option value="">Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="18">Science: Computers</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
+            <option value="23">History</option>
+          </select>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Difficulty</label>
+          <div class="difficulty-btns" id="difficulty-btns">
+            <button class="diff-btn active" data-difficulty="">Any</button>
+            <button class="diff-btn" data-difficulty="easy">Easy</button>
+            <button class="diff-btn" data-difficulty="medium">Medium</button>
+            <button class="diff-btn" data-difficulty="hard">Hard</button>
+          </div>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Questions</label>
+          <div class="amount-btns" id="amount-btns">
+            <button class="amount-btn" data-amount="5">5</button>
+            <button class="amount-btn active" data-amount="10">10</button>
+            <button class="amount-btn" data-amount="15">15</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="start-btn" id="start-btn">Start Quiz →</button>
+      <p class="powered-by">Powered by <a href="https://opentdb.com" target="_blank" rel="noopener">Open Trivia DB</a></p>
+    </div>
+  </div>
+
+  <!-- LOADING SCREEN -->
+  <div class="screen" id="loading-screen" hidden>
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <p>Loading questions...</p>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div class="screen" id="quiz-screen" hidden>
+    <div class="quiz-card">
+      <div class="quiz-top">
+        <div class="progress-info">
+          <span class="q-counter" id="q-counter">Question 1 of 10</span>
+          <span class="q-score" id="q-score">Score: 0</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="timer-wrap" id="timer-wrap">
+        <div class="timer-ring">
+          <svg viewBox="0 0 44 44">
+            <circle class="timer-track" cx="22" cy="22" r="18"/>
+            <circle class="timer-fill" id="timer-circle" cx="22" cy="22" r="18"/>
+          </svg>
+          <span class="timer-number" id="timer-number">15</span>
+        </div>
+      </div>
+
+      <div class="category-badge" id="q-category">Category</div>
+
+      <p class="question-text" id="question-text">Loading...</p>
+
+      <div class="answers-grid" id="answers-grid"></div>
+    </div>
+  </div>
+
+  <!-- RESULTS SCREEN -->
+  <div class="screen" id="results-screen" hidden>
+    <div class="results-card">
+      <div class="results-emoji" id="results-emoji">🏆</div>
+      <h2 class="results-title">Quiz Complete!</h2>
+      <p class="results-message" id="results-message"></p>
+
+      <div class="score-ring-wrap">
+        <svg class="score-ring" viewBox="0 0 120 120">
+          <circle class="ring-track" cx="60" cy="60" r="50"/>
+          <circle class="ring-fill" id="ring-fill" cx="60" cy="60" r="50"/>
+        </svg>
+        <div class="score-inner">
+          <span class="score-pct" id="score-pct">0%</span>
+          <span class="score-fraction" id="score-fraction">0/0</span>
+        </div>
+      </div>
+
+      <div class="results-breakdown" id="results-breakdown"></div>
+
+      <div class="results-actions">
+        <button class="restart-btn" id="restart-btn">Play Again</button>
+        <a href="../../index.html" class="back-home-btn">← Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
