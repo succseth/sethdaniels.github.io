@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seth Daniels — Junior Front-End Developer building clean, responsive web experiences.">
+  <meta property="og:title" content="Seth Daniels | Front-End Developer">
+  <meta property="og:description" content="Junior Front-End Developer specializing in HTML, CSS & JavaScript.">
+  <title>Seth Daniels — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SD<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-outline nav-resume">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hi, my name is</p>
+      <h1 class="hero-name reveal">Seth Daniels</h1>
+      <h2 class="hero-role reveal">
+        I build <span class="typing-wrapper"><span id="typing-text" class="typing-text"></span><span class="cursor">|</span></span>
+      </h2>
+      <p class="hero-description reveal">
+        A passionate junior front-end developer focused on crafting clean, responsive,
+        and user-friendly web experiences using HTML, CSS &amp; JavaScript.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <a href="#skills" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </a>
+  </section>
+
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I know</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">💻</div>
+          <h3 class="skill-card-title">Core Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">CSS Flexbox</span>
+            <span class="skill-tag">CSS Grid</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🛠️</div>
+          <h3 class="skill-card-title">Tools &amp; Workflow</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Chrome DevTools</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">LocalStorage</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">📚</div>
+          <h3 class="skill-card-title">Currently Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag learning">React</span>
+            <span class="skill-tag learning">TypeScript</span>
+            <span class="skill-tag learning">Node.js</span>
+            <span class="skill-tag learning">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I've built</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">🌤️</div>
+            <div class="project-links">
+              <a href="projects/weather-dashboard/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/sethdaniels" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            Real-time weather app showing live conditions, a 7-day forecast, humidity, and
+            wind speed for any city worldwide. Supports geolocation and °C/°F toggle.
+            Zero API key required.
+          </p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Open-Meteo API</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">✅</div>
+            <div class="project-links">
+              <a href="projects/task-manager/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/sethdaniels" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Task Manager App</h3>
+          <p class="project-desc">
+            Full-featured productivity app with task creation, priority levels (High/Medium/Low),
+            category tagging, and smart filtering. All data persists via localStorage
+            — nothing lost on refresh.
+          </p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">LocalStorage</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">🧠</div>
+            <div class="project-links">
+              <a href="projects/quiz-app/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/sethdaniels" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Quiz App</h3>
+          <p class="project-desc">
+            Interactive trivia game with selectable category, difficulty, and question count.
+            Features a live countdown timer, animated answer reveals, score tracking,
+            and a detailed results screen. Powered by the Open Trivia Database.
+          </p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Open Trivia API</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get in touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+          I'm actively looking for junior front-end opportunities. Whether you have a question,
+          a project idea, or just want to connect — my inbox is open.
+        </p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <a href="mailto:srdaniels0409@gmail.com" class="contact-item">
+            <span class="contact-item-icon">✉️</span>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <p class="contact-item-value">srdaniels0409@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/sethdaniels" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-item-icon">💼</span>
+            <div>
+              <p class="contact-item-label">LinkedIn</p>
+              <p class="contact-item-value">linkedin.com/in/sethdaniels</p>
+            </div>
+          </a>
+          <a href="https://github.com/sethdaniels" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-item-icon">🐙</span>
+            <div>
+              <p class="contact-item-label">GitHub</p>
+              <p class="contact-item-value">github.com/sethdaniels</p>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form"
+              action="https://formsubmit.co/srdaniels0409@gmail.com"
+              method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New message from your portfolio">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the opportunity or project..." rows="5" required class="form-input"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">Designed &amp; Built by <span class="accent">Seth Daniels</span> &copy; 2025</p>
+      <p class="footer-open">Open to opportunities</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
